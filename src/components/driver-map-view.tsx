@@ -33,7 +33,7 @@ export default function DriverMapView({ bus: selectedBus }: DriverMapViewProps) 
   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || '';
 
   const { isLoaded, loadError } = useJsApiLoader({
-    id: 'google-map-script-driver',
+    id: 'google-map-script',
     googleMapsApiKey: apiKey,
     libraries: ['geometry'],
   });

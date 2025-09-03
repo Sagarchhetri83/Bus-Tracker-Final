@@ -1,7 +1,7 @@
 // src/components/Hero.tsx
 "use client";
 
-import { Header } from "@/components/Header";
+import { Header } from "./Header";
 
 export function Hero() {
   return (

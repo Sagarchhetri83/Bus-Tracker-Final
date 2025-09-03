@@ -30,7 +30,7 @@ export default function AdminMapView() {
   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || '';
   
   const { isLoaded, loadError } = useJsApiLoader({
-    id: 'google-map-script-admin',
+    id: 'google-map-script',
     googleMapsApiKey: apiKey,
     libraries: ['geometry'],
   });
