@@ -9,7 +9,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
 import { drivers } from '@/lib/data';
-import { Bus, LogIn, ShieldCheck } from 'lucide-react';
+import { Bus, LogIn, UserPlus } from 'lucide-react';
 
 export default function LoginPage() {
   const [email, setEmail] = useState('');
@@ -92,6 +92,15 @@ export default function LoginPage() {
             <LogIn className="mr-2" />
             Login
           </Button>
+          
+          {/* Sign Up Link */}
+          <div className="text-center pt-2">
+            <a href="/signup" className="text-blue-600 hover:text-blue-700 text-sm flex items-center justify-center gap-2">
+              <UserPlus className="w-4 h-4" />
+              Don't have an account? Sign up
+            </a>
+          </div>
+          
            <div className="text-center text-xs text-muted-foreground pt-4 space-y-2">
               <p className="font-semibold">Demo credentials:</p>
               <div>

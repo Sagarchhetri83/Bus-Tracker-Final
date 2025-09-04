@@ -18,17 +18,20 @@ export function Hero() {
           height='100%'
         ></iframe>
       </div>
+
+      {/* Mobile-only precise cover for Spline badge (above iframe, below UI) */}
+      <div className="absolute md:hidden z-10 right-4 bottom-4 w-[176px] h-[56px] rounded-full bg-white pointer-events-none"></div>
       
       {/* Title bottom-left near N symbol */}
-      <div className="absolute z-20 left-6 bottom-24 md:bottom-6 pointer-events-none">
+      <div className="absolute z-50 left-6 bottom-50 md:bottom-6 pointer-events-none">
         <h1 className="text-white text-3xl md:text-5xl font-extrabold drop-shadow-2xl">
           Bus Tracker
         </h1>
       </div>
 
       {/* Get Started button bottom-right near Spline badge */}
-      <div className="absolute z-20 right-6 bottom-24 md:bottom-6">
-        <a href="/home" className="px-5 py-3 bg-black/80 hover:bg-black text-white rounded-full font-semibold shadow-lg backdrop-blur">
+      <div className="absolute z-20 right-6 bottom-32 md:bottom-6">
+        <a href="/home" className="px-5 py-3 !bg-white !text-black hover:!bg-white/90 rounded-full font-semibold shadow-lg">
           Get Started
         </a>
       </div>
